@@ -13,13 +13,14 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: [
-    './app/index.jsx'
+    './app/initialize.js'
   ],
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         include:  __dirname + '/app',
+        loader: ['babel-loader'],
         query: {
 	        presets: ['es2015', 'react']
 	    }
