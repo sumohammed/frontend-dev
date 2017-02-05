@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --watch-poll",
+    "build": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,15 +17,26 @@
     "babel-preset-react": "^6.16.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
+    "extract-loader": "^0.1.0",
+    "extract-text-webpack-plugin": "2.0.0-beta.5",
+    "file-loader": "^0.9.0",
     "flux": "*",
     "html-webpack-plugin": "^2.26.0",
     "jquery": "^3.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^1.3.1",
+    "resolve-url": "^0.2.1",
+    "resolve-url-loader": "^1.6.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
+    "stylus": "*",
+    "stylus-loader": "*",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.22",
     "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "node-sass": "^4.3.0"
   }
 }
